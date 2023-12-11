@@ -1,0 +1,105 @@
+.wrapper {
+  background-color: #000;
+  color: #fff;
+  min-height: 20vh;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .left__side {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 460px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .footer__Links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding-left: 1.5rem;
+
+      @media screen and (max-width: 600px) {
+        gap: 1rem;
+      }
+
+      .footer__link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        font-family: "Helvetica Neue";
+
+        &:hover {
+          opacity: 60%;
+        }
+      }
+    }
+  }
+
+  .footer__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+
+    @mixin btn {
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    a {
+      color: #fff;
+    }
+
+    .socialBtnOne {
+      @include btn;
+      background-color: #1da1f2;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+
+    .socialBtnTwo {
+      @include btn;
+      background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+      );
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+
+    .socialBtnThree {
+      @include btn;
+      background-color: #5865f2;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}

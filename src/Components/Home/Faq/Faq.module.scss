@@ -1,0 +1,86 @@
+.wrapper {
+  background: url("/images/Path 131.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 4rem 0;
+
+  .mainWrapper {
+    .headline {
+      text-align: center;
+      font: normal normal 900 60px/98px "Helvetica Neue bold";
+      letter-spacing: 0px;
+      color: #eaeaea;
+      opacity: 1;
+      margin-bottom: 30px;
+    }
+
+    .faqItem {
+      padding-bottom: 2rem;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 90%;
+      margin: 0 auto;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      .question {
+        text-align: left;
+        font: normal normal 900 1.2rem/2.4rem Helvetica Neue;
+        letter-spacing: 0px;
+        color: #87efe4;
+        opacity: 1;
+
+        @media screen and (max-width: 600px) {
+          font-size: 20px;
+        }
+      }
+
+      .answer {
+        text-align: left;
+        font: normal normal normal 1rem/2rem Helvetica Neue;
+        letter-spacing: 0px;
+        color: #d0d0d0;
+        opacity: 1;
+
+        @media screen and (max-width: 600px) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .quoteItem {
+      padding-bottom: 2rem;
+      width: 90%;
+      margin: 0 auto;
+
+      div {
+        p {
+          text-align: left;
+          // font: normal normal italic 1.2rem/2.4rem Helvetica Neue;
+          font-family: "Noto Serif", serif;
+          font-size: 1.2rem;
+          font-style: italic;
+          font-weight: normal;
+          line-height: 2.4rem;
+          letter-spacing: 0px;
+          color: #fff;
+          opacity: 1;
+        }
+
+        span {
+          text-align: left;
+          font: normal normal normal 1rem/2rem Helvetica Neue;
+          letter-spacing: 0px;
+          color: #d0d0d0;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

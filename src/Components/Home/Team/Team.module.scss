@@ -1,0 +1,86 @@
+.wrapper {
+  background-color: #000000;
+  color: #fff;
+  opacity: 1;
+  padding: 6rem 0;
+
+  .teamContainer {
+    .headline {
+      text-align: center;
+      font: normal normal bold 60px/98px Helvetica Neue bold;
+      letter-spacing: 0px;
+      color: #ededed;
+      opacity: 1;
+      margin-bottom: 2rem;
+    }
+
+    .teamMates {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      gap: 5rem;
+      flex-wrap: wrap;
+
+      .teamMateCard {
+        background: transparent;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+        flex-direction: column;
+        width: 250px;
+        cursor: pointer;
+
+        &:hover {
+          background: #42b3a628 0% 0% no-repeat padding-box;
+          border-radius: 38px;
+        }
+
+        .teamMate__name {
+          text-align: center;
+          font: normal normal bold 18px/35px Helvetica Neue;
+          letter-spacing: 0px;
+          color: #ffffff;
+          opacity: 1;
+        }
+
+        .teamMate__role {
+          text-align: center;
+          font: normal normal 100 20px/30px Helvetica Neue;
+          letter-spacing: 3.9px;
+          color: #ffffff;
+          opacity: 1;
+          margin-top: 1rem;
+        }
+
+        .social {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+          cursor: pointer;
+          margin-top: 2rem;
+          margin-right: 10px;
+          height: 40px;
+          width: 40px;
+          background-color: #1da1f2;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+
+          svg {
+            font-size: 18px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 3rem 0;
+  }
+}

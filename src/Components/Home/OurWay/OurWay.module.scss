@@ -1,0 +1,71 @@
+.wrapper {
+  background: #306781;
+  background-image: url("/images/our why.png"); /* fallback */
+  background-image: url("/images/our why.png"),
+    linear-gradient(#306781, #306781);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  // background: url("/images/our why.png");
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  opacity: 1;
+  padding: 5rem 0;
+  // Path 155.png
+  // #306781
+  .left {
+    width: 60%;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    .article {
+      text-align: left;
+      font: normal normal 300 15px/20px "Helvetica Neue medium";
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+      padding-bottom: 1.2rem;
+
+      &:first-child {
+        padding-top: 1rem;
+      }
+    }
+
+    .linkContainer {
+      text-align: left;
+      font: normal normal 500 15px/30px "Helvetica Neue";
+      letter-spacing: 0px;
+      color: #ffffff;
+
+      .link {
+        text-align: left;
+        font: normal normal bold 15px/30px Helvetica Neue bold;
+        letter-spacing: 0px;
+        color: inherit;
+        text-decoration: none;
+        margin-left: 6px;
+        font-weight: 700;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      padding-bottom: 1.5rem;
+    }
+  }
+}
